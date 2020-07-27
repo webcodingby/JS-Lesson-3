@@ -4,27 +4,84 @@
 // (Узнать у пользователя) В консоль вывести 2 массива, до и после применения коэффициента.
 // Task #1
 
-let array = [1,2,3,4];
+// let array = [1,2,3,4];
 
-function addToArray(num, factor) {
-  for(let i = 0; i < num ; i ++){
-    array.push(alert = +prompt(`Add to number`));
-  }
-  console.log(array);
-  alert = prompt('Введите "+" - что бы увеличить значения в массиве или "-" - что бы уменьшить значения в массиве ')
-  if(factor === '+') {
-    array.push(alert = +prompt(`Add to number`));
-  } else{
-    array.pop();
-  }
+// function addToArray(num, factor) {
+//   for(let i = 0; i < num ; i ++){
+//     array.push(alert = +prompt(`Add to number`));
+//   }
+//   console.log(array);
+//   alert = prompt('Введите "+" - что бы увеличить значения в массиве или "-" - что бы уменьшить значения в массиве ')
+//   if(factor === '+') {
+//     array.push(alert = +prompt(`Add to number`));
+//   } else{
+//     array.pop();
+//   }
 
-}
-addToArray(3,"+");
-console.log(array);
+// }
+// addToArray(3,"+");
+// console.log(array);
+
+
+
 // Написать функцию которая возвращает строку обрезанную в зависимости от переданных в нее значений 
 // от и до, здесь Вам нужно почитать про работу slice() или substring() для строк
 // Task #2
+let str = prompt('Enter word');
+let firstValue = +prompt('Введите номер символа с которого начинать обрезание');
+let secondValue = +prompt('Введите номер символа до которого обрезать');
+firstValue--;
+secondValue--;
 
+
+
+// function enterVariables() {
+//   firstValue = +prompt('Введите номер символа с которого начинать обрезание');
+//   secondValue = +prompt('Введите номер символа до которого обрезать');
+//   firstValue--;
+//   secondValue--;
+// }
+
+// enterVariables();
+
+// let stringLength = () => {
+
+//   firstValue--;
+//   secondValue--;
+
+//   while (str === '' || typeof str === null) {
+//     str = prompt('Enter word again');
+//   }
+  
+//   while (firstValue === 0 || typeof firstValue === null) {
+//     alert('Не правильное значение')
+//     enterVariables();
+//   }
+
+//   while (secondValue === 0 || typeof secondValue === null) {
+//     alert('Не правильное значение')
+//     enterVariables();
+//   }
+
+//   while (firstValue > str.length) {
+//     alert('Значение больше длины введенной фразы');
+//     enterVariables();
+//   }
+
+//   while (secondValue > str.length) {
+//     alert('Значение больше длины введенной фразы');
+//     enterVariables();
+//   }
+// }
+
+function cutСharacters(firstValue, secondValue) {
+  newStr = str.substring(firstValue, secondValue);
+  // stringLength();
+  return newStr;
+}
+
+let result = cutСharacters(firstValue, secondValue);
+console.log(result);
 
 
 // Создать функцию, при вызове которой, будет формироваться объект PERSON с помощью 
@@ -35,6 +92,8 @@ console.log(array);
 // функция, которая возвращает массив объектов с информацией о детях(имя, возраст), в конце узнать профессию и 
 // вывести в консоль сформированный объект
 // Task #3
+
+
 
 // Есть массив данных
 // Надо написать функцию, которая сортирует массив на другие в зависимости от типа данных.
@@ -60,6 +119,10 @@ console.log(array);
 //   666,
 //   false
 // ];
+
+
+
+
 
 
 // Написать метод для объекта family который вернёт самого старого члена семьи и добавит его в объект в качестве нового свойства.
