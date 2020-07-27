@@ -27,61 +27,58 @@
 // Написать функцию которая возвращает строку обрезанную в зависимости от переданных в нее значений 
 // от и до, здесь Вам нужно почитать про работу slice() или substring() для строк
 // Task #2
-let str = prompt('Enter word');
-let firstValue = +prompt('Введите номер символа с которого начинать обрезание');
-let secondValue = +prompt('Введите номер символа до которого обрезать');
-firstValue--;
-secondValue--;
+// let str = prompt('Enter word');
+// let firstValue = +prompt('Введите номер символа с которого начинать обрезание');
+// let secondValue = +prompt('Введите номер символа до которого обрезать');
+// firstValue--;
+// secondValue--;
 
 
 
-// function enterVariables() {
-//   firstValue = +prompt('Введите номер символа с которого начинать обрезание');
-//   secondValue = +prompt('Введите номер символа до которого обрезать');
-//   firstValue--;
-//   secondValue--;
-// }
+// // function enterVariables() {
+// //   firstValue = +prompt('Введите номер символа с которого начинать обрезание');
+// //   secondValue = +prompt('Введите номер символа до которого обрезать');
+// //   firstValue--;
+// //   secondValue--;
+// // }
 
-// enterVariables();
+// // enterVariables();
 
-// let stringLength = () => {
+// // let stringLength = () => {
 
-//   firstValue--;
-//   secondValue--;
+// //   firstValue--;
+// //   secondValue--;
 
-//   while (str === '' || typeof str === null) {
-//     str = prompt('Enter word again');
-//   }
+// //   while (str === '' || typeof str === null) {
+// //     str = prompt('Enter word again');
+// //   }
   
-//   while (firstValue === 0 || typeof firstValue === null) {
-//     alert('Не правильное значение')
-//     enterVariables();
-//   }
+// //   while (firstValue === 0 || typeof firstValue === null) {
+// //     alert('Не правильное значение')
+// //     enterVariables();
+// //   }
 
-//   while (secondValue === 0 || typeof secondValue === null) {
-//     alert('Не правильное значение')
-//     enterVariables();
-//   }
+// //   while (secondValue === 0 || typeof secondValue === null) {
+// //     alert('Не правильное значение')
+// //     enterVariables();
+// //   }
 
-//   while (firstValue > str.length) {
-//     alert('Значение больше длины введенной фразы');
-//     enterVariables();
-//   }
+// //   while (firstValue > str.length) {
+// //     alert('Значение больше длины введенной фразы');
+// //     enterVariables();
+// //   }
 
-//   while (secondValue > str.length) {
-//     alert('Значение больше длины введенной фразы');
-//     enterVariables();
-//   }
-// }
+// //   while (secondValue > str.length) {
+// //     alert('Значение больше длины введенной фразы');
+// //     enterVariables();
+// //   }
+// // }
 
-function cutСharacters(firstValue, secondValue) {
-  newStr = str.substring(firstValue, secondValue);
-  // stringLength();
-  return newStr;
-}
+// let  cutСharacters = (firstValue, secondValue) => newStr = str.substring(firstValue, secondValue);
+// // stringLength();
 
-let result = cutСharacters(firstValue, secondValue);
-console.log(result);
+// console.log(cutСharacters(firstValue, secondValue));
+
 
 
 // Создать функцию, при вызове которой, будет формироваться объект PERSON с помощью 
@@ -92,6 +89,8 @@ console.log(result);
 // функция, которая возвращает массив объектов с информацией о детях(имя, возраст), в конце узнать профессию и 
 // вывести в консоль сформированный объект
 // Task #3
+
+
 
 
 
