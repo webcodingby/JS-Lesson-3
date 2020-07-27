@@ -90,9 +90,52 @@
 // вывести в консоль сформированный объект
 // Task #3
 
+// FIXME: // перенести в функцию
+// let person = {};
+// let childrenNumber;
 
 
+// function userData(name, family, age) {
+//   person.name = prompt(`Enter your name`);
+//   person.family = prompt(`Enter your family`);
+//   person.age = +prompt(`How old you`);
+//   married = prompt(`You are married? Yes or No`);
+//   if (married === 'yes' || married === 'Yes') {
+//     userMarried();
+//   }
+//   console.log(person);
+//   children = prompt(`You are children? Yes or No`);
+//   if (children === 'yes' || children === 'Yes') {
+//     userChild();
+//   }
+//   person.proffession = prompt(`What is your profession?`);
+//   console.log(person);
+// }
 
+// function userMarried() {
+//   person.married = {};
+//   person.married.name = prompt(`Enter your name`);
+//   person.married.age = +prompt(`How old you`);
+// }
+// T
+// // TODO:-- доделать реализацию объекта детей в отдельный массив
+// function userChild() {
+//   person.children = [];
+//   childrenNumber = +prompt('How many children?');
+//   for (let i = 1; i <= childrenNumber; i++) {
+//     children[i].name = prompt(`Enter your name`);
+//     children[i].age = +prompt(`How old you`);
+//     person.children.push({});
+//   }
+// }
+
+
+// function addObject() {
+//   person = userData();
+//   console.log(person);
+// }
+
+// addObject();
 
 // Есть массив данных
 // Надо написать функцию, которая сортирует массив на другие в зависимости от типа данных.
@@ -101,24 +144,12 @@
 // буквы О на Л, посмотрите работу split() и join() для массивов.Функции должны быть универсальными.
 // Task #4
 
-// var data = [
-//   'молоко',
-//   34,
-//   717,
-//   false,
-//   'копы',
-//   true,
-//   74,
-//   108,
-//   'погроммист',
-//   'котик',
-//   'мемчик',
-//   true,
-//   true,
-//   666,
-//   false
-// ];
+var data = ['молоко', 34, 717, false, 'копы', true, 74, 108, 'погроммист', 'котик', 'мемчик', true, true, 666, false];
 
+for(let i =0; i<data.length; i++){
+  console.log(typeof data[i]);
+  
+}
 
 
 
@@ -129,26 +160,12 @@
 
 // let family = {
 //   amount: 5,
-//   familyMembers: [{
-//       name: 'Borya',
-//       age: 15
-//     },
-//     {
-//       name: 'Tolya',
-//       age: 54
-//     },
-//     {
-//       name: 'Anjela',
-//       age: 45
-//     },
-//     {
-//       name: 'Snejana',
-//       age: 14
-//     },
-//     {
-//       name: 'Gavriil',
-//       age: 24
-//     },
+//   familyMembers: [
+//     {name: 'Borya', age: 15},
+//     {name: 'Tolya', age: 54},
+//     {name: 'Anjela', age: 45},
+//     {name: 'Snejana', age: 14},
+//     {name: 'Gavriil', age: 24},
 //   ],
 // }
 
